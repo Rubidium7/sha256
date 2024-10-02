@@ -150,13 +150,14 @@ fn hash_loop(input: Vec<u8>, hash: &mut [u32; 8]) {
 
 fn read_from_stdin() -> Result<String>
 {
-	let mut result = String::new();
+	let mut out = String::new();
 
-	for line in io::stdin().lines() {
-		let tmp = line?;
-		result = result.clone() + &tmp;
+	let result = io::stdin().read_to_string(&mut out);
+	
+	match result {
+		Ok(_) => Ok(out),
+		Err(error) => Err(Box::new(error))
 	}
-	Ok(result)
 }
 
 fn get_input(args: &Vec<String>) -> Result<String> {
