@@ -28,7 +28,7 @@
 
 ![product-screenshot](./screenshots/sha256.PNG)
 
-This was the third and final project on my personal 10-day hackathon to learn about cryptography, and coding in rust, and to deepen my knowledge about network protocols and TLS/SSL.
+This was the third and final project on my personal 10-day [hackathon](https://github.com/Rubidium7/hackathon) to learn about cryptography, and coding in rust, and to deepen my knowledge about network protocols and TLS/SSL.
 
 This is the actually secure hashing algorithm sha256 but coded in rust. The program takes in input as either a string, a file or reads it from the stdin, and then shuffles it around with some efficiently encrypting math magic a couple of smart guys from the NSA came up with way back when.
 
@@ -45,7 +45,7 @@ As this program is coded in rust, you need to have rust and cargo installed
 
 ### How to run it
 
-The program takes input as either a string, a file or reads it from the stdin
+The program takes in input as either a string, a file or reads it from the stdin
 
 ```
 git clone https://github.com/Rubidium7/sha256.git
